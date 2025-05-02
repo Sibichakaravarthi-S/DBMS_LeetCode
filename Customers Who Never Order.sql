@@ -1,0 +1,1 @@
+select c.name as "Customers" from customers c where not exists (select 1 from Orders where customerId = c.id);
